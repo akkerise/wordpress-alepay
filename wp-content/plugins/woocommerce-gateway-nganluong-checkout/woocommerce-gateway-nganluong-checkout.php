@@ -98,7 +98,7 @@ function woocommerce_payment_nganluong_init()
                     'title' => __('Name', 'woocommerce'),
                     'type' => 'text',
                     'description' => __('Tên phương thức thanh toán ( khi khách hàng chọn phương thức thanh toán )', 'woocommerce'),
-                    'default' => __('NganLuongVN', 'woocommerce')),
+                    'default' => __('AlePay', 'woocommerce')),
                 'icon' => array(
                     'title' => __('Icon', 'woocommerce'),
                     'type' => 'text',
@@ -108,16 +108,16 @@ function woocommerce_payment_nganluong_init()
                     'title' => __('Mô tả', 'woocommerce'),
                     'type' => 'textarea',
                     'description' => __('Mô tả phương thức thanh toán.', 'woocommerce'),
-                    'default' => __('Click place order and you will be directed to the Ngan Luong website in order to make payment', 'woocommerce')),
+                    'default' => __('Click place order and you will be directed to the AlePay website in order to make payment', 'woocommerce')),
                 'merchant_id' => array(
                     'title' => __('NganLuong.vn email address', 'woocommerce'),
                     'type' => 'text',
-                    'description' => __('Đây là tài khoản NganLuong.vn (Email) để nhận tiền')),
+                    'description' => __('Đây là tài khoản AlePay.vn (Email) để nhận tiền')),
                 'redirect_page_id' => array(
                     'title' => __('Return URL'),
                     'type' => 'select',
                     'options' => $this->get_pages('Hãy chọn...'),
-                    'description' => __('Hãy chọn trang/url để chuyển đến sau khi khách hàng đã thanh toán tại NganLuong.vn thành công', 'woocommerce')
+                    'description' => __('Hãy chọn trang/url để chuyển đến sau khi khách hàng đã thanh toán tại AlePay.vn thành công', 'woocommerce')
                 ),
                 'status_order' => array(
                     'title' => __('Trạng thái Order'),
@@ -132,9 +132,9 @@ function woocommerce_payment_nganluong_init()
                     'description' => __('"vnd" or "usd"', 'woocommerce')
                 ),
                 'nganluong_url' => array(
-                    'title' => __('Ngan Luong URL', 'woocommerce'),
+                    'title' => __('AlePay URL', 'woocommerce'),
                     'type' => 'text',
-                    'description' => __('"https://www.nganluong.vn/checkout.php"', 'woocommerce')
+                    'description' => __('"https://www.alepay.vn/checkout.php"', 'woocommerce')
                 ),
                 'merchant_site_code' => array(
                     'title' => __('Merchant Site Code', 'woocommerce'),
